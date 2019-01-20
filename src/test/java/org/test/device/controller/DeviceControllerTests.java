@@ -20,13 +20,15 @@ import java.util.Map;
 import static org.assertj.core.api.BDDAssertions.then;
 
 /**
- * Basic integration tests for service demo application.
+ * Basic integration tests for DeviceController class.
  *
  * @author aliz.kazerani@gmail.com
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(properties = {"management.port=0"})
+@TestPropertySource(properties = {"management.port=0",
+							"amazon.aws.accesskey=AKIAJHMNAYITK6E3OGIQ",
+							"amazon.aws.secretkey=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"})
 public class DeviceControllerTests {
 
 	@LocalServerPort
@@ -45,6 +47,7 @@ public class DeviceControllerTests {
 	public void init() {
 		validDevice = DeviceInitializer.validDevice();
 		invalidDevice = DeviceInitializer.invalidDevice();
+
 	}
 
 

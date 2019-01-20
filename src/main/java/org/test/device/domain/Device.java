@@ -1,12 +1,17 @@
 package org.test.device.domain;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+
 import javax.validation.constraints.NotBlank;
 
 /**
  * Created by Alireza on 1/6/2019.
  * Device class represents the domain model of a sensor.
  */
+@DynamoDBTable(tableName = "Device")
 public class Device {
+    @DynamoDBHashKey
     @NotBlank
     private String id;
     @NotBlank

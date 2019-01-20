@@ -1,0 +1,5 @@
+/target/**
+/DeviceRepositoryIntegrationTest.java
+/DynamoDBLocalFixture.java
+/pom-backup-dynamodblocal.xml
+/test-device.iml
