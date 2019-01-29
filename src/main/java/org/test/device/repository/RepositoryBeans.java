@@ -16,9 +16,6 @@ public class RepositoryBeans {
 
     @Bean
     public DeviceRepository getDeviceRepository() {
-//        return null;
-//        return new DeviceRepositoryImpl(null);
-        return new DeviceRepositoryImpl(new DynamoDBMapper(db));
-//        return new SimpleDynamoDBCrudRepository<Device, String>()
+        return new DeviceRepositoryImpl(db, new DynamoDBMapper(db));
     }
 }

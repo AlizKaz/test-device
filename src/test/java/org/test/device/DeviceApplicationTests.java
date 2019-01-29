@@ -20,9 +20,7 @@ import static org.assertj.core.api.BDDAssertions.then;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@TestPropertySource(properties = {"management.port=0",
-							"amazon.aws.accesskey=AKIAJHMNAYITK6E3OGIQ",
-							"amazon.aws.secretkey=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"})
+@TestPropertySource(properties = {"management.port=0"})
 public class DeviceApplicationTests {
     @Value("${local.management.port}")
     private int mgt;

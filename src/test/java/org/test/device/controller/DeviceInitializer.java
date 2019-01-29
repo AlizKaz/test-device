@@ -9,7 +9,7 @@ import org.test.device.domain.Device;
 public class DeviceInitializer {
     public static Device validDevice() {
    		Device device = new Device();
-   		device.setId("/devices/id1");
+   		device.setId("id1");
    		device.setDeviceModel("/devicemodels/id1");
    		device.setName("Sensor");
    		device.setNote("Testing a sensor.");

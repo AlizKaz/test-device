@@ -1,13 +1,6 @@
-amazon:
-  dynamodb:
-    endpoint:
-  aws:
-    accesskey:AKIAJHMNAYITK6E3OGIQ
-    secretkey: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
-
 logging:
   level:
-    org:
-      springframework:debug
-    com:
-      amazonaws:debug
+    root: ERROR
+    org.springframework.web: DEBUG
+    com.amazonaws: DEBUG
+
