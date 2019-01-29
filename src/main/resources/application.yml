@@ -1,0 +1,6 @@
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: DEBUG
+    com.amazonaws: DEBUG
+
