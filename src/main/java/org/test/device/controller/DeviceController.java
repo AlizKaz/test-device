@@ -37,7 +37,7 @@ public class DeviceController {
             } else {
                 return new ResponseEntity(HttpStatus.BAD_REQUEST);
             }
-        } catch (Throwable e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
             return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
